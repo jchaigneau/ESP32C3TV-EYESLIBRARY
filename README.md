@@ -14,7 +14,8 @@ Heavily based on <a [href="https://github.com/luisllamasbinaburo/ESP32_Faces/](h
 - https://fr.aliexpress.com/item/1005005973391614.html
 
 ## Software Component Structure
-
+- Button GPIO 10 is used to change expression
+ 
 - *Face* is the core object, consisting of left and right eye components, behaviour, expression, a look assistant, and a blink assistant. The outputs of these components are chained together to create the display on each frame:
 
 - The Face *Behaviour* contains an array of weighted _Emotions_. There are currently 18 emotions, as defined in the enum in FaceEmotions.hpp. 
